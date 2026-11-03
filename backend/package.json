@@ -1,0 +1,33 @@
+{
+  "name": "rbhu-assessment-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "zod": "^4.1.0",
+    "helmet": "^8.1.0",
+    "express-rate-limit": "^8.1.0",
+    "swagger-ui-express": "^5.0.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.0",
+    "prisma": "^6.19.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@types/ws": "^8.18.1"
+  }
+}
